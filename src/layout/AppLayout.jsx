@@ -20,7 +20,7 @@ function AppLayout() {
       </div>
 
       <div
-        className="bg-blue-600 absolute h-15 w-15 rounded-full bottom-5 right-3 lg:hidden text-center py-3"
+        className="bg-blue-600 fixed h-15 w-15 rounded-full bottom-5 right-3 lg:hidden text-center py-3"
         onClick={() => setIsOpen(!isOpen)}
       >
         Button

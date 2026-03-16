@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 function SideBar() {
   return (
-    <div className="hidden lg:flex w-[13vw] h-screen bg-neutral-100 border-none 
+    <div className="hidden lg:flex fixed left-0 top-0  w-[13vw] h-screen bg-neutral-100 border-none 
                     flex-col justify-between px-5 py-8">
 
       {/* TOP SECTION */}

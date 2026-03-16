@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 function MobileViewSidebar() {
   return (
-    <div className='absolute lg:hidden w-[50vw]'>
+    <div className='fixed lg:hidden w-[50vw] z-20'>
      <div className="  h-screen bg-neutral-100 border-none 
                     flex-col justify-between px-5 py-8">
 
