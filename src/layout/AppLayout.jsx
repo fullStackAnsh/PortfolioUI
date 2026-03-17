@@ -20,11 +20,22 @@ function AppLayout() {
       </div>
 
       <div
-        className="bg-blue-600 fixed h-15 w-15 rounded-full bottom-5 right-3 lg:hidden text-center py-3"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        Button
-      </div>
+  className="fixed bottom-5 right-3 lg:hidden
+             h-14 w-14
+             rounded-full
+             bg-neutral-100
+             shadow-lg
+             flex items-center justify-center
+             cursor-pointer hover:bg-neutral-300 transition"
+  onClick={() => setIsOpen(!isOpen)}
+>
+  {/* Hamburger Icon */}
+  <div className="flex flex-col gap-1">
+    <span className="block w-6 h-0.5 bg-neutral-500"></span>
+    <span className="block w-6 h-0.5 bg-neutral-500"></span>
+    <span className="block w-6 h-0.5 bg-neutral-500"></span>
+  </div>
+</div>
 
     </div>
   );
