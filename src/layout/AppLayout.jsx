@@ -10,7 +10,7 @@ function AppLayout() {
   return (
     <div className="w-full h-screen flex">
 
-      {isOpen && <MobileViewSidebar />}
+      {isOpen && <MobileViewSidebar state={isOpen} method={setIsOpen} />}
 
       <SideBar />
 

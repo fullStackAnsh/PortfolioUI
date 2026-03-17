@@ -1,30 +1,16 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const projects = [
   {
-    title: "Aceternity",
+    title: "DankUrls",
     description:
-      "A design and development studio that focuses on building quality apps.",
+      "Turn long boring urls into dank short names that you can remember.",
     image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000",
-    tags: ["Nextjs", "Tailwindcss"],
-  },
-  {
-    title: "Moonbeam",
-    description:
-      "Never write from scratch again with Moonbeam, your AI first writing tool",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000",
-    tags: ["Nextjs", "Tailwindcss"],
-  },
-  {
-    title: "Tailwind Master Kit",
-    description:
-      "A beautiful and comprehensive Tailwind CSS components library for building modern websites and applications.",
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1000",
-    tags: ["Nextjs", "Tailwindcss"],
-  },
+      "dankurls.png",
+    tags: ["ReactJS", "NodeJS","TailwindCSS","MongoDB"],
+    link:"https://dankurls.vercel.app/"
+  }
 ];
 
 function Home() {
@@ -39,16 +25,15 @@ function Home() {
         </h1>
         <div className="max-w-2xl  ">
         <p className="lg:text-[17px] text-[15px] font-light text-neutral-500 mb-4">
-          I'm a full-stack developer that loves <span className="bg-neutral-100 text-neutral-500 px-2 py-1 rounded">building products</span> and web apps that
-          can impact millions of lives.
+          I'm a full-stack developer that loves <span className="bg-neutral-100 text-neutral-500 px-2 py-1 rounded">building products</span> and web apps that challenges me to learn and become a good developer.
         </p>
 
         <p className="lg:text-[17px] text-[15px] font-light text-neutral-500 ">
-          I'm a senior software engineer with{" "}
+         I ship code that is clean , optimized and follows {" "}
           <span className="bg-neutral-100 text-neutral-500 px-2 py-1 rounded">
-            7 years of experience
+            best practices
           </span>{" "}
-          building scalable web apps that are performance optimized and good
+          of the industry that helps me build scalable web apps that are performance optimized and good
           looking.
         </p>
         </div>
@@ -62,6 +47,7 @@ function Home() {
 
         <div className="space-y-12 ">
           {projects.map((project, index) => (
+            <NavLink to={project.link}>
             <div key={index} className="flex lg:gap-3 lg:flex-row flex-col items-start  hover:bg-neutral-50 rounded-2xl">
               
               <img
@@ -90,8 +76,10 @@ function Home() {
                   ))}
                 </div>
               </div>
+              
 
             </div>
+            </NavLink>
           ))}
         </div>
       </div>

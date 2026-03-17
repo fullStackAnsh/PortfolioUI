@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-function MobileViewSidebar() {
+function MobileViewSidebar({isOpen,setIsOpen}) {
   return (
     <div className='fixed lg:hidden w-[50vw] z-20'>
      <div className="  h-screen bg-neutral-100 border-none 
@@ -27,23 +27,19 @@ function MobileViewSidebar() {
         {/* Navigation */}
         <nav className="flex flex-col gap-1 items-center  text-gray-600 border-l border-l-neutral-200 ">
 
-          <NavLink to="/" className="flex items-center justify-center w-[25vw]   hover:text-neutral-800 cursor-pointer py-2  ">
+          <NavLink to="/" onClick={() => setIsOpen(!isOpen)} className="flex items-center justify-center w-[25vw]   hover:text-neutral-800 cursor-pointer py-2  ">
             Home
           </NavLink>
 
-          <NavLink to="/about" className="flex items-center justify-center w-[25vw]  py-2  hover:text-neutral-800 cursor-pointer ">
+          <NavLink to="/about" onClick={() => setIsOpen(!isOpen)} className="flex items-center justify-center w-[25vw]  py-2  hover:text-neutral-800 cursor-pointer ">
              About
           </NavLink>
 
-          <NavLink to="/projects" className="flex items-center justify-center w-[25vw]  py-2  hover:text-neutral-800 cursor-pointer  ">
+          <NavLink to="/projects" onClick={() => setIsOpen(!isOpen)} className="flex items-center justify-center w-[25vw]  py-2  hover:text-neutral-800 cursor-pointer  ">
              Projects
           </NavLink>
 
-          <NavLink to="/articles" className="flex items-center justify-center w-[25vw]  py-2  hover:text-neutral-800 cursor-pointer ">
-             Articles
-          </NavLink>
-
-          <NavLink to="/contact" className="flex items-center justify-center w-[25vw]  py-2  hover:text-neutral-800 cursor-pointer ">
+          <NavLink to="/contact" onClick={() => setIsOpen(!isOpen)} className="flex items-center justify-center w-[25vw]  py-2  hover:text-neutral-800 cursor-pointer ">
              Contact
           </NavLink>
 
@@ -52,19 +48,18 @@ function MobileViewSidebar() {
         {/* Socials */}
         <div className="mt-15">
           <p className="text-[15px] font-bold text-neutral-800 mb-3">
-            Socials
+            Connect
           </p>
 
           <div className="flex flex-col border-l border-l-neutral-200  pl-1 gap-2 text-gray-600 items-center">
 
-            <a className="flex items-center justify-center w-[25vw]  py-2 hover:text-neutral-800 cursor-pointer ">
-             Twitter
-          </a>
-            <a className="flex items-center justify-center w-[25vw]  py-2  hover:text-neutral-800 cursor-pointer ">
+            <a  href="https://www.linkedin.com/in/ansh-kanojia-418b34211/"
+  target="_blank" className="flex items-center justify-center w-[25vw]  py-2  hover:text-neutral-800 cursor-pointer ">
              Linkedin
           </a>
-           <a className="flex items-center justify-center w-[25vw]  py-2  hover:text-neutral-800 cursor-pointer ">
-             Youtube
+           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anshkanojia13@gmail.com"
+  target="_blank" className="flex items-center justify-center w-[25vw]  py-2  hover:text-neutral-800 cursor-pointer ">
+             Gmail
           </a>
 
           </div>

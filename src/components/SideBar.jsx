@@ -37,10 +37,6 @@ function SideBar() {
              Projects
           </NavLink>
 
-          <NavLink to="/articles" className="flex items-center justify-center w-[10vw]  py-2  hover:text-neutral-800 cursor-pointer rounded-lg">
-             Articles
-          </NavLink>
-
           <NavLink to="/contact" className="flex items-center justify-center w-[10vw]  py-2  hover:text-neutral-800 cursor-pointer rounded-lg ">
              Contact
           </NavLink>
@@ -50,19 +46,18 @@ function SideBar() {
         {/* Socials */}
         <div className="mt-15">
           <p className="text-[15px] font-bold text-neutral-800 mb-3">
-            Socials
+            Connect
           </p>
 
           <div className="flex flex-col gap-1 items-center  text-gray-600 border-l border-l-neutral-200 ">
 
-            <a className="flex items-center justify-center w-[10vw]  py-2  hover:text-neutral-800 cursor-pointer rounded-lg ">
-             Twitter
-          </a>
-            <a className="flex items-center justify-center w-[10vw]  py-2  hover:text-neutral-800 cursor-pointer rounded-lg ">
+            <a href="https://www.linkedin.com/in/ansh-kanojia-418b34211/"
+  target="_blank" className="flex items-center justify-center w-[10vw]  py-2  hover:text-neutral-800 cursor-pointer rounded-lg ">
              Linkedin
           </a>
-            <a className="flex items-center justify-center w-[10vw]  py-2  hover:text-neutral-800 cursor-pointer rounded-lg ">
-             Youtube
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anshkanojia13@gmail.com"
+  target="_blank" className="flex items-center justify-center w-[10vw]  py-2  hover:text-neutral-800 cursor-pointer rounded-lg ">
+             Gmail
           </a>
 
           </div>
