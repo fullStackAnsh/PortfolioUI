@@ -68,12 +68,13 @@ function MobileViewSidebar({isOpen,setIsOpen}) {
       </div>
 
       {/* BOTTOM SECTION */}
+      <a href="Resume.pdf" target='_blank'>
       <button className="bg-black text-white w-[30vw] text-[13px] font-bold py-3 rounded-full 
-                        shadow-[0px_10px_23px_0px_#4a5568] absolute right-8 bottom-3
+                        shadow-[0px_10px_23px_0px_#4a5568] fixed left-10 bottom-3
                          ">
         Read Resume 
       </button>
-
+</a>
     </div></div>
   )
 }

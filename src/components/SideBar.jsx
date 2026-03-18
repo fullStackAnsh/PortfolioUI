@@ -66,12 +66,13 @@ function SideBar() {
       </div>
 
       {/* BOTTOM SECTION */}
+      <a href="Resume.pdf" target='_blank'>
       <button className="bg-black text-white w-[10vw] text-[13px] font-bold py-3 rounded-full 
                         shadow-[0px_10px_23px_0px_#4a5568]
                          ">
         Read Resume 
       </button>
-
+      </a>
     </div>
   );
 }

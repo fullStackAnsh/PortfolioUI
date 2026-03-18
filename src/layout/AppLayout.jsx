@@ -23,17 +23,17 @@ function AppLayout() {
   className="fixed bottom-5 right-3 lg:hidden
              h-14 w-14
              rounded-full
-             bg-neutral-100
+             bg-neutral-800
              shadow-lg
              flex items-center justify-center
-             cursor-pointer hover:bg-neutral-300 transition"
+             cursor-pointer hover:bg-neutral-600 transition z-50"
   onClick={() => setIsOpen(!isOpen)}
 >
   {/* Hamburger Icon */}
-  <div className="flex flex-col gap-1">
-    <span className="block w-6 h-0.5 bg-neutral-500"></span>
-    <span className="block w-6 h-0.5 bg-neutral-500"></span>
-    <span className="block w-6 h-0.5 bg-neutral-500"></span>
+  <div className="flex flex-col gap-1 text-white">
+    <span className="block w-6 h-0.5 bg-white"></span>
+    <span className="block w-6 h-0.5 bg-white"></span>
+    <span className="block w-6 h-0.5 bg-white"></span>
   </div>
 </div>
 
